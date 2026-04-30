@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            
+            display: flex; 
+            /*this is used in conatiners, so now we can use flex properties. Alligns items in horizonatal way*/
+            
+            height: 80vh;
+            
+            /* justify-content: center;  */
+            /*aligns items in horizontal way at centre*/
+            /* justify-content aligns the items in main axis */
+            
+            align-items: center; 
+            /*aligns items in vertical way at centre*/
+            /* align-items aligns the items in cross axis */
+
+            /* justify-content: end; */
+                /*aligns items in horizontal way at end*/
+            
+            /* align-items: end; */
+                /*aligns items in vertical way at end*/
+
+            /* justify-content: space-around; */
+                /*aligns items in horizontal way with equal space around them*/
+            
+            /* align-items: space-around; */
+                /*aligns items in vertical way with equal space around them*/
+
+            /* justify-content: space-between; */
+                /*aligns items in horizontal way with equal space between them*/
+
+            /* align-items: space-between;  */
+                /*aligns items in vertical way with equal space between them*/
+
+            /* flex-direction: column-reverse; */
+            /* this is used to change the direction of items in container, by default it is row, but we can change it to column, row-reverse and column-reverse */
+
+            flex-wrap: wrap;
+                /* this is used to wrap the items in container, by default it is nowrap, but we can change it to wrap and wrap-reverse      It alligns the elemts below so that no element overflows */
+
+            /* flex-wrap: wrap-reverse; */
+                /* this is used to wrap the items in container in reverse order, by default it is nowrap, but we can change it to wrap and wrap-reverse      It alligns the elemts below so that no element overflows */
+
+            /* align-content: center; */
+                /* this is used to align the content in container, it works when there are multiple lines of items, by default it is stretch, but we can change it to center, start, end, space-around and space-between */
+
+            /* align-content: flex-start; */
+                /* this is used to align the content in container at start, it works when there are multiple lines of items, by default it is stretch, but we can change it to center, start, end, space-around and space-between */
+
+            /* there is no justify-items in flexbox */
+
+            flex-flow: row wrap;
+                /* this is a shorthand property for flex-direction and flex-wrap, it is used to set the direction and wrap of items in container, by default it is row nowrap, but we can change it to row wrap, row-reverse wrap, column nowrap, column wrap and column-reverse wrap */
+
+            /* gap: 10px; */
+            /* row-gap: 5px; */
+            /* column-gap: 25px; */
+            gap: 5px 45px;
+            /* gap: row column */
+                /* this is used to set the gap between the items in container, it works in both horizontal and vertical way, by default it is 0, but we can change it to any value */
+        }
+        .item{
+            height: 16px;
+            width: 16px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            background-color: lightcoral;
+
+            flex-grow: 1;
+                /* this is used to make the items grow in container, by default it is 0, but we can change it to any value, the items with higher flex-grow value will grow more than the items with lower flex-grow value */
+        }
+            /* item flex-box properties */
+        .order-1{
+            order: 100;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        }
+                /* order is used to change the order of items in container, by default it is 0, but we can change it to any value, the items with lower order value will be displayed first and the items with higher order value will be displayed last */
+            
+        .item1{
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+                /* this is used to make the items shrink in container, by default it is 1, but we can change it to any value, the items with higher flex-shrink value will shrink more than the items with lower flex-shrink value */
+            /* align-items: flex-end;    */
+                /*aligns items in vertical way at end*/
+            align-self: flex-start;
+                /* this is used to align the item in container, it works in vertical way, by default it is auto, but we can change it to flex-start, flex-end, center, baseline and stretch */
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item order-3">9</div>
+            <div class="item">10</div>
+            <!-- <div class="item">11</div>
+            <div class="item">12</div>`
+            <div class="item">13</div>
+            <div class="item">14</div>
+            <div class="item">15</div>
+            <div class="item">16</div>
+            <div class="item">17</div>
+            <div class="item">18</div> -->
+            <!-- <div class="item">19</div>
+            <div class="item">20</div> -->
+            <!-- <div class="item">21</div>
+            <div class="item">22</div>
+            <div class="item">23</div>
+            <div class="item">24</div>
+            <div class="item">25</div>
+            <div class="item">26</div>
+            <div class="item">27</div>
+            <div class="item">28</div>
+            <div class="item">29</div>
+            <div class="item">30</div>
+            <div class="item">31</div>
+            <div class="item">32</div>
+            <div class="item">33</div>
+            <div class="item">34</div>
+            <div class="item">35</div>
+            <div class="item">36</div>
+            <div class="item">37</div>
+            <div class="item">38</div>
+            <div class="item">39</div>
+            <div class="item">40</div>
+            <div class="item">41</div>
+            <div class="item">42</div>
+            <div class="item">43</div>
+            <div class="item">44</div>
+            <div class="item">45</div>
+            <div class="item">46</div>
+            <div class="item">47</div>
+            <div class="item">48</div>
+            <div class="item">49</div>
+            <div class="item">50</div>
+            <div class="item">51</div>
+            <div class="item">52</div>
+            <div class="item">53</div>
+            <div class="item">54</div> -->
+        </div>
+    </main>
+</body>
+</html>
