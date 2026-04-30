@@ -1,2 +1,2 @@
 # CSS
-Learnt Flex Box (CSS)
+Learning CSS
