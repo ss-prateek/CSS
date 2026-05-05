@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid blue;
+            display: inline-block;    /*this sets all attributes with box class to become a inline ele*/
+            /* if we use inline only, we can't set margin width etc, so we use inline-block */
+            padding: 45px;
+            margin: 35px;
+            width: 344px;
+        }
+        .box1{
+            /* display: none;  Completely removes that content */
+            visibility: hidden;  /* saves the space of the content but hides it*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am a Box
+    </div>
+    <div class="box">
+        another box
+    </div>
+    <!-- Div is not a inline propert hence both came into different lines -->
+    <div>
+        also a nice box
+    </div>
+    <span>I am a good</span>    <!-- Span is a inline element heence both line came into same line -->
+    <span>boy</span>
+</body>
+</html>

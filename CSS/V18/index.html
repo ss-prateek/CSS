@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* Removed all the margin & padding from elements, as it is universal so for all elements */
+        }
+
+        .box{
+            background-color: aqua;
+        }
+
+        .box1{
+            color: red;
+            padding: 10px;
+            margin: 25px; 
+            border : 2px solid blue;
+            /* content -> padding (includes bg colour) -> border -> margin (doesn't include bg colour) */
+            height: 200px;
+            box-sizing: border-box;         /* This will make the height inlcude border content and padding */
+            /* Heigh doesn't include padding & border, box-sizing change definition of height */
+            /* Total width = width + left padding + right padding + left border + right border + left border + right margin */
+            /* Total height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin */
+        }
+
+        .box2{
+            color: black;
+            padding: 10px;
+            margin: 40px; 
+            border : 2px solid blue;
+            height: 200px;
+            box-sizing: border-box;
+            /* Margin collapse - This says that if 2 element's margin overlaps, then the maximun margin is taken once */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">I'm a Box</div>       <!-- Gave multiple class to div, we use space to add other class -->
+    <div class="box box2">I'm Box2</div>
+</body>
+</html>

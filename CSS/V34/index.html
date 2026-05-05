@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        .cards{
+            border:2px solid black;
+            display: flow-root;
+                /* flow-root creates a new block formatting context, which helps to contain floated elements within the container. */
+        }
+        img{
+            float:left;
+            /* Float allows the element to be placed to the left or right of its container */
+        }
+        .card{
+            border:2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: lightblue;
+            /* clear:right; */
+            /* Clear is used to control the behavior of elements that follow floated elements. It specifies whether an element should be moved below (cleared) floated elements that precede it. */
+            /* if we clear right, then if floated elements are on left, this element will not be moved */
+            /* if we clear left, then if floated elements are on right, this element will not be moved */
+            clear: both;
+            /* if we clear both, then this element will be moved below all floated elements, regardless of their float direction. */
+        }
+    </style>
+</head>
+<body>
+    <!-- .cards>.card*3 -->
+    <div class="cards">
+        <img src="https://as1.ftcdn.net/v2/jpg/02/69/87/02/1000_F_269870289_MWF7S9vobkq5UY2C9CeX8K4QwqL2QDsd.jpg" alt="" width="230" height="200">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cumque, labore iste, eveniet eum voluptatem qui reiciendis error ipsam facilis dolorum, voluptate voluptatum consectetur incidunt odio itaque voluptatibus. A vitae odit quod cum non in?</p>
+        </div>
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quia numquam incidunt veritatis accusamus enim id corporis vero minus quod dolore ea, aliquid provident at doloribus eius cum totam. Odit sint officiis explicabo, velit dicta adipisci quidem voluptate cumque pariatur vel eos molestias soluta laudantium sunt expedita a nisi dolorum culpa et suscipit fuga omnis! Omnis porro eaque reprehenderit molestiae enim quas nisi provident? Ipsa, qui exercitationem nihil nemo similique recusandae dicta, possimus quis eos repellat labore necessitatibus maiores illo quo harum impedit obcaecati! Corrupti id voluptate reiciendis illo, dolorem fugit reprehenderit modi recusandae nesciunt commodi, omnis eius voluptatibus doloremque minima. Pariatur, rem iure magni dolores minus voluptates, exercitationem id nam doloremque praesentium modi quisquam commodi natus asperiores quod quis fugiat, repellendus a vitae assumenda? Ipsa expedita voluptas dolorem porro harum repellat amet dicta placeat vero aperiam consectetur maxime architecto tempora, numquam facere ab quaerat iste. Quas illo fuga ipsa nesciunt tempora inventore ratione ea hic minus illum error accusamus aliquid mollitia iure, sequi facere libero dolorum esse ipsam dicta id atque repellendus neque! Fuga nam omnis porro, aspernatur commodi explicabo reiciendis, dolores corrupti autem quae eligendi facilis ratione doloribus iure soluta, voluptatem at non sunt nostrum. Veniam, debitis libero.</p>
+        </div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>

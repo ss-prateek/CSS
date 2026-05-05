@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <!-- Linking new font from Google font -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic+Guides&display=swap" rel="stylesheet"> -->
+    <style>
+        /* Importing fornt from Google fonts, either import or link*/
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic+Guides&display=swap');
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 900;       /* Can be used to bold or thin the text */
+            line-height: 0.9;       /* It adds space btw 2 lines of a para, default line height is 1.1 or 1.2*/
+            letter-spacing: 1px;   /* This adds sapce between the letters */
+        }
+        h1{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style: italic;
+            text-decoration: underline;
+            font-weight: 500;
+            text-align:center;
+        }
+        a{
+            font-family: "Playwrite NZ Basic Guides";
+            font-size: 20px;    /* By default the size is 32px */
+        }
+        h2{
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-decoration-color:magenta;
+            text-decoration-style: double;
+            text-decoration-thickness:3px ;
+            text-indent: 125px;
+        }
+        .lorem{
+            border: 2px solid red;
+            width: 145px;
+            /* text-overflow: ellipsis;
+            overflow: clip;         clip - completely hides the content outside of the border */
+            word-break: break-all;  /*Allows to break and some letters appear in diff lines*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <h2>About fonts</h2>
+        <p>This is Font</p>
+        <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis asperiores accusamus deleniti! Dicta debitis at aliquid fugit, mollitia repudiandae veniam totam ducimus et. Quaerat quisquam rem temporibus! Modi corrupti sit ullam a doloribus officiis esse.</p>
+        <a>Google Font</a>
+    </div>
+</body>
+</html>

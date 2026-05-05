@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor website which can change colors using CSS variables</title>
+    <style>
+        :root{
+            --primary-color: rgb(34, 143, 107); /* This will set the primary color to aquamarine */
+            --text-color: white; /* This will set the text color to white */
+            --secondary-color: rgb(218, 193, 193); /* This will set the secondary color to white */
+        }
+
+        body{
+            background-color: var(--secondary-color);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Playwrite DE SAS", cursive;
+        }
+
+        ul li{
+            list-style: none;
+            display: inline;        /* This will make the list items appear in a horizontal line */
+            padding: 23px;              /* This will add some space around each list item */ 
+            font-weight: 600; /* This will make the text in the navigation bar bold */
+            color: var(--text-color); /* This will set the text color of the navigation items to white */
+        }
+        
+        nav{
+            background-color: var(--primary-color); 
+            padding: 12px 0; /* This will add some vertical padding to the navigation bar */
+        }
+
+        ul li a{
+            text-decoration: none; /* This will remove the underline from the links in the navigation bar */
+            color: var(--text-color); /* This will set the text color of the links in the navigation bar to white */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:40vw;
+            height:10vh;
+            border: 2px solid black;
+            /* overflow: scroll;   adds a scroll appear for content outside the border */
+            overflow: auto; /*if overflowing content then only a scroll bar appears */
+            /* white-space: nowrap; all text in horizontal line */
+            /* text-overflow: ellipsis; adds "...." for overflowed content */
+            /* overflow: clip; cuts the overflowed text */
+            /* Individual handling */
+            /* overflow-x: hidden;
+            overflow-y: hidden; */
+            overflow: auto hidden;  /*overflow: x y*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis inventore voluptate iste dicta, asperiores ab deleniti, sed, accusantium maxime consequuntur cupiditate libero optio! Beatae nesciunt repellat voluptates neque autem minus odio, deserunt repellendus quidem quibusdam iste expedita vero voluptatum. Iusto.
+    </div>
+</body>
+</html>

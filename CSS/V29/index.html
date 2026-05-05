@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        *{
+            margin:  0px;
+            padding: 0px;
+        }
+        body{
+            background-color: grey;
+            padding: 26px;
+            display: flex;
+        }
+        .card{
+            background-color: white;
+            width: 198px;
+            height: 288px;
+            border-radius: 7px;
+            margin: 5px;;
+        }
+        .image{
+            padding: 5px;
+        }
+        .image img{
+            border-radius: 7px;
+        }
+        .image img:hover{
+            transform: scale3d(1.1, 1.1, 1.1);
+        }
+        .content{
+            padding: 8px;
+        }
+        .content p{
+            font-size: 14px;
+            color: grey;
+        }
+        .content h2{
+            padding:0 18px 0;
+            color: black;
+            font-family:cursive;
+        }
+        .capsule{
+            padding: 0px 43px; /*padding: top left bottom right */
+        }
+        .capsule span{
+            border: 2px solid gray;
+            border-radius: 11px;
+            padding: 0 5px 0 5px;
+            color: grey;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: small;
+        }
+        .button{
+            text-align: center;
+        }
+        .button button{
+            background-color: lightblue;
+            color: white;
+            border: none;
+            padding: 3px 17px;
+            border-radius: 19px;
+            cursor: pointer;
+        }
+        .button button:hover{
+            background-color: steelblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="image">
+            <img width="188" height="120" src="https://as1.ftcdn.net/v2/jpg/02/69/87/02/1000_F_269870289_MWF7S9vobkq5UY2C9CeX8K4QwqL2QDsd.jpg" alt="Image">
+        </div>
+
+        <div class="capsule">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+
+        <div class="content">
+            <h2>Man on Boat</h2>
+            <p>A man standing on a boat in the water. With a beautiful view of the surrounding nature.</p>
+        </div>
+        <div class="button">
+            <button>Read more</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="image">
+            <img width="188" height="120" src="https://as1.ftcdn.net/v2/jpg/02/69/87/02/1000_F_269870289_MWF7S9vobkq5UY2C9CeX8K4QwqL2QDsd.jpg" alt="Image">
+        </div>
+
+        <div class="capsule">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+
+        <div class="content">
+            <h2>Man on Boat</h2>
+            <p>A man standing on a boat in the water. With a beautiful view of the surrounding nature.</p>
+        </div>
+        <div class="button">
+            <button>Read more</button>
+        </div>
+    </div>
+</body>
+</html>

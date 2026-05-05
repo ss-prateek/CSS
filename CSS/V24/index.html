@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 34px;
+            /* box-shadow: horizontal-offset vertical-offset blur spread color inset; */
+            box-shadow: 5px 15px 5px gray;
+            /* text-shadow: horizontal-offset vertical-offset blur  color; */
+            text-shadow: 2px 6px 6px rgb(167, 13, 13);
+            /* outline: width style color    Outline doesn't take any space, drawn around the element, outside of any border (takes place) */
+            outline: 2px solid green;
+            outline-offset:2px;
+            /* Boarders have varying width and different sides, outline have a unifrom width */
+            border-radius: 20px;
+            /* outlines follow borders but it don't have any radius option */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad vero in adipisci commodi dolor ut maxime, officia obcaecati odio nesciunt recusandae nihil quam, tenetur voluptas libero molestias explicabo, vitae delectus perspiciatis sed ipsa placeat? Sit voluptatibus repellat magnam repellendus aliquam?</div>
+</body>
+</html>

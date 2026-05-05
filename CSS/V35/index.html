@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+        /* .box::first-line{
+            color:yellow;
+        } */
+        
+        .boxes *{
+            border: 2px solid black;
+            color: blue
+        }
+
+        p, a, .box, [data-color="primary"]{ /* this is a group selector, it selects all the elements that are p, a, .box and [data-color="primary"] */
+            margin-top: 45px;   /* this is an attribute selector, it selects the element with the attribute data-color and value primary */
+            padding-top: 20px;
+        }
+
+        /* .box:nth-child(2){
+            background-color:aqua;
+        } */
+        /* this nth child selector targets the second .box element within its parent */
+
+        .box:nth-last-child(1){
+            background-color: burlywood;
+        }
+        /* this nth-last-child selector targets the first .box element from the end within its parent */
+
+        .boxes:before{
+            content: "I am a before element";
+            color: red;
+        }
+        /* This is used to add a content (pseudoelement) before an element */
+
+        .boxes:after{
+            content: "I am an after element";
+            color: red;
+        }
+        /* This is used to add a content (pseudoelement) after an element */
+
+        ::selection{
+            color:aqua;
+            background-color: blanchedalmond;
+        }
+        /* This is used to style the selected text */
+
+        .box::first-letter{
+            color: red;
+            font-size: 20px;
+        }
+        /* This is used to style the first letter of an element */
+
+        input::placeholder{
+            color:chocolate;
+        }
+        /* This is used to style the placeholder text of an input element */
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur repellendus ad, eum velit nulla neque fugit necessitatibus consequatur aut expedita impedit inventore, ex eius molestias excepturi ab officia quia assumenda error tempore hic? Deleniti.</div>
+        <div data-color="primary" class="box">Hey i am a box</div>
+        <div class="box">Hey i am a box</div>
+        <input type="text" placeholder="Hey i am an input">
+    </div>
+</body>
+</html>

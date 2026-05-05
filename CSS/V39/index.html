@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            width: 80vw;
+            border: 2px solid green;
+            height: 70vh;
+            display: grid;
+            /* grid-template-columns: [c-first] 120px [c-second] 100px [c-third]; */
+            /* make 2 columns of 120px and 100px */
+            /* grid-template-rows: [r-first] 100px [r-second] 100px [r-third] 100px; */
+            /* we can name the lines by [name] */
+
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* fr is a unit representing a fraction of the available space */
+            /* grid-template-columns: repeat(4, 1fr); */
+
+            grid-template-columns: repeat(4, minmax(100px,1fr));
+            /* we use minmax() to set a minimum and maximum size for each column */
+
+            /* we use justify-content to align the entire grid horizontally inside the container */
+            /* we use align-content to align the entire grid vertically inside the container */
+            place-content: center;
+             /* place-content is a shorthand for justify-content and align-content, it can be start, end, center, space-between, space-around, space-evenly */  
+
+            /* gap:34px; */
+            row-gap: 12px;
+            column-gap: 24px;
+             /* gap is the space between the grid items, it can be set for rows and columns separately by row-gap and column-gap */
+
+            justify-items: center;
+            align-items: center;
+                /* justify-items is used to align the items horizontally in the grid cell, it can be start, end, center, stretch */
+                /* align-items is used to align the items vertically in the grid cell, it can be start, end, center, stretch */
+                /* there are more positions to align item, these properties are applied in individual grid cell */
+        }
+
+        .item {
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+            /* width: 55px; */
+        }
+
+        .item4{
+            /* grid-row: 1/2; */
+            /* grid-row-start: 1; */
+            /* grid-row-end: 2; */
+            /* or we can write */
+            /* grid-row: r-first/r-second; */
+            /* these properties position the item in the grid, 1/2 means starts from 1st row or column to 2nd row or column */
+            /* grid-column: 1/3; */
+            /* or we can write */
+            /* grid-column: c-first/c-third; */
+            /* 1/3 means starts from 1st column to 3rd column, but we only have 2 columns, so it will occupy the entire row */
+            align-self: self-end;
+        }
+
+        .item1{
+            /* grid-row: 1/2; */
+            grid-column: 1/2;
+            /* if we give same values, the item will occupy the same space and overlap eachother */
+
+            /* if height and width are not specified, the item will occupy the entire grid cell, or it will take the position we assign */
+            /* grid-row: 1/4; */
+            /* or we can write */
+            /* grid-row-start: 1; */
+            /* grid-row-end: 4; */
+            /* or we can write */
+            /* grid-row: r-first/4; */
+
+            justify-self: self-start;
+             /* justify-self is used to align the item horizontally in the grid cell, it can be start, end, center, stretch */
+             /* align-self is used to align the item vertically in the grid cell, it can be start, end, center, stretch */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+</body>
+</html>

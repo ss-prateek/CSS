@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Specificity</title>
+</head>
+<style>
+    .h1{
+        color: aqua;
+    }
+    h1.yellow{      /* Specificty increases as element+class = 1+10 = 11 */
+        color: yellow; /* !important;   Only important can overwrite in,ine css, it adds 10000 specificity */
+    }
+    .cred{
+        color: red ;
+    }
+    .cpurple{
+        color: purple;
+    }
+    [data-x=a]{                 /* Attribute selector  */
+        background-color: red;
+
+/* Specificity = 1(element) + 10(class) + 10(another class) + 10(attribute) + 10(pseudo class) = 41 */
+    a.harryclass.rohan-class[href]:hover{
+        color: blueviolet;
+    }
+    }
+</style>
+<body>
+    <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+</body>
+</html>
+
+<!-- The Cascade Algorithim
+1. Position & order of appearance : If we have same level rules, then the one appearing in the last will be applied i.e, here yellow,cred,cpurple are all class selector, so the one at the bottom most will be applied.
+2.Specificity : When type of rules changes, we calculate specificity & the strongest one is applied
+                Order is, Inline style > ID selector > Class or Attribute selector > Element selector > Universal selector 
+                
+3.Origin : It is the style given by browser or extension to our content, if we have given CSS for that content it will overwite the browser given style
+4.Importance : When we write important with our rules, it weights more heavy that other rules. It will even overwrite inline CSS
+Specificty calculation
+univeral selector = 0, element selector pseudo elements= 1, class selector attribute selector pseudo classes = 10, Inline styles = 1000-->

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables</title>
+    <style>
+        /* We declared a CSS variable and this helps us to reuse values throughout our stylesheet */
+        /* inside root there is all global variables */
+        :root{
+            --primary-color: lightblue;
+            --secondary-color: lightpink;
+            --defpadding: 10px;
+            --defopacity: 0.3;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav{
+            /* background-color: lightpink; */
+            background-color: var(--secondary-color);
+        }
+
+        .container{
+            /* background-color: lightblue; */
+            background-color: var(--primary-color);
+                /* if the variable is not defined it will use the default value which is blue */
+        }
+
+        ul{
+            display: flex;
+        }
+
+        ul li{
+            list-style: none;
+            padding: var(--defpadding);
+            border: 5px solid var(--primary-color);
+            /* if the variable is not defined it will use the default value which is blue */
+            opacity: var(--defopacity);
+            /* if the variable is not defined it will use the default value which is 0.3 */
+        }
+
+        ul li:first-child{
+            /* local variable to use for this element */
+            --color: lightgreen;
+            background-color: var(--color, blue); /* if the variable is not defined it will use the default value which is blue */
+        }    
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home </li>
+            <li>About </li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora sed voluptatem fuga ipsum unde illo laudantium! Commodi quaerat, esse labore nobis dolor obcaecati amet laboriosam eum perspiciatis fuga quisquam ab omnis officia repellendus quas, voluptas, explicabo magni nam quibusdam architecto sapiente itaque. Labore, quae!
+    </div>
+</body>
+</html>
