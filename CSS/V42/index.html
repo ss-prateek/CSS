@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Transforms</title>
+    <style>
+        *{
+            margin: 10px;
+            padding: 10px;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* Transform is used to rotate the element */
+            /* transform: rotate(45deg); */
+            /* 1 turn = 360deg */
+            /* transform: rotate(0.25turn); */
+            /* transform: rotateX(45deg); */
+            /* rotates towards the viewer */
+            /* transform: rotateY(45deg); */
+            /* rotates to the left */
+            /* transform: rotateZ(59deg); */
+            /* rotates around the z-axis */
+
+            /* Scale is used to resize the element */
+            /* transform: scale(1.5); */
+            /* scales the element by a factor of 1.5 */
+            /* transform: scaleX(1.5); */
+            /* scales the element along the x-axis by a factor of 1.5 */
+            /* transform: scaleY(1.5); */
+            /* scales the element along the y-axis by a factor of 1.5 */
+            /* transform: scaleZ(1.5); */
+            /* scales the element along the z-axis by a factor of 1.5 */
+            
+            /* skew is used to distort the element */
+            /* transform: skew(30deg); */
+            /* skews the element by 30 degrees along both the x and y axes */
+            /* transform: skewX(30deg); */
+            /* skews the element by 30 degrees along the x-axis */
+            /* transform: skewY(30deg); */
+            /* skews the element by 30 degrees along the y-axis */
+            /* skew is not applied in z axis */
+
+            /* translate is used to move the element */
+            /* transform: translate(10px, 10px); */
+            /* moves the element by 10 pixels along both the x and y axes */
+            /* transform: translateX(10px); */
+            /* moves the element by 10 pixels along the x-axis */
+            /* transform: translateY(10px); */
+            /* moves the element by 10 pixels along the y-axis */
+            /* transform: translateZ(10px); */
+            /* moves the element by 10 pixels along the z-axis */
+
+            /* in translate 80% is 80% of the container's height, width */
+            /* transform: translateY(80%) skewX(40deg) translateX(-45%); */
+            /* transforms are applied in the order they are written */
+
+            /* transform origin specifies the point around which the transform is applied */
+            transform-origin: 30% 0;
+            /* % means percentage of the container's width and height */
+            transform: rotateZ(98deg);
+        }
+        .container{
+            width: 100vw;
+            height: 80vw;
+            border: 2px solid purple;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
 </body>
 </html>
