@@ -19,30 +19,30 @@ I am Vidit Singh Sisodia, a B.Tech student at KIIT, currently building a strong 
 
 | Folder | Topic |
 | --- | --- |
-| `CSS/V14` | CSS basics |
-| `CSS/V15` | Inline, internal, and external CSS |
-| `CSS/V17` | CSS selectors |
-| `CSS/V18` | Box model |
-| `CSS/V19` | Colors and fonts |
-| `CSS/V20-Exercise` | Practice exercise |
-| `CSS/V21` | Specificity and cascade |
-| `CSS/V22` | CSS sizing units |
-| `CSS/V23` | Display property |
-| `CSS/V24` | Shadows and outlines |
-| `CSS/V25` | Lists and list styling |
-| `CSS/V26` | Overflow |
-| `CSS/V28` | Positioning |
-| `CSS/V29` | Card design practice |
-| `CSS/V30` | CSS variables |
-| `CSS/V31` | Media queries |
-| `CSS/V33` | Multicolor website practice |
-| `CSS/V34` | Float and clear |
-| `CSS/V35` | Advanced selectors |
-| `CSS/V37` | Layout practice |
-| `CSS/V38` | Flexbox |
-| `CSS/V39` | CSS Grid |
-| `CSS/V41` | Navigation bar layout |
-| `CSS/V42` | CSS transforms |
+| `CSS/01-css-basics` | CSS basics |
+| `CSS/02-adding-css-to-html` | Inline, internal, and external CSS |
+| `CSS/03-css-selectors` | CSS selectors |
+| `CSS/04-box-model` | Box model |
+| `CSS/05-colors-and-fonts` | Colors and fonts |
+| `CSS/06-practice-exercise` | Practice exercise |
+| `CSS/07-specificity-and-cascade` | Specificity and cascade |
+| `CSS/08-sizing-units` | CSS sizing units |
+| `CSS/09-display-property` | Display property |
+| `CSS/10-shadows-and-outlines` | Shadows and outlines |
+| `CSS/11-list-styling` | Lists and list styling |
+| `CSS/12-overflow` | Overflow |
+| `CSS/13-positioning` | Positioning |
+| `CSS/14-card-design` | Card design practice |
+| `CSS/15-css-variables` | CSS variables |
+| `CSS/16-media-queries` | Media queries |
+| `CSS/17-multicolor-website` | Multicolor website practice |
+| `CSS/18-float-and-clear` | Float and clear |
+| `CSS/19-advanced-selectors` | Advanced selectors |
+| `CSS/20-layout-practice` | Layout practice |
+| `CSS/21-flexbox` | Flexbox |
+| `CSS/22-css-grid` | CSS Grid |
+| `CSS/23-navigation-bar-layout` | Navigation bar layout |
+| `CSS/24-css-transforms` | CSS transforms |
 
 ## Current Focus
 
