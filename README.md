@@ -13,7 +13,7 @@ I am Vidit Singh Sisodia, a B.Tech student at KIIT, currently building a strong 
 - Sizing units, display properties, positioning, floats, and media queries
 - CSS variables and reusable styling patterns
 - Layout practice with Flexbox and CSS Grid
-- CSS transforms and visual UI experiments
+- CSS transforms, transitions, animations, and visual UI experiments
 
 ## Folder Index
 
@@ -43,12 +43,16 @@ I am Vidit Singh Sisodia, a B.Tech student at KIIT, currently building a strong 
 | `CSS/22-css-grid` | CSS Grid |
 | `CSS/23-navigation-bar-layout` | Navigation bar layout |
 | `CSS/24-css-transforms` | CSS transforms |
+| `CSS/25-flexbox-practice` | Flexbox practice layout |
+| `CSS/26-Transition-Property` | CSS transition property |
+| `CSS/27-animations` | CSS animations |
 
 ## Current Focus
 
 - Writing cleaner and more readable CSS
 - Building responsive layouts
 - Practicing Flexbox and Grid through small UI examples
+- Experimenting with transitions and animations
 - Improving repository structure and documentation as I learn
 
 ## Next Goals

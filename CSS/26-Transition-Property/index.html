@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Property</title>
+    <style>
+        .container{
+            background-color: aqua;
+            width: 50vw;
+            height: 40vh;
+        }
+        .box{
+            background-color: red;
+            width: 5vw;
+            height: 4vh;
+
+            /* transition properties are made of 4 values: property, duration, timing-function, delay */
+
+            /* used to specify which CSS property should be transitioned */
+            /* transition-property: transform; */
+
+            /* to allow all properties to transition */
+            /* transition-property: all; */
+
+            /* to specify multiple properties to transition */
+            /* transition-property: background-color, transform; */
+
+            /* transition-duration: 3s; */
+            /* transition-timing-function: ease-in; */
+            /* this is a function which defines the speed curve of the transition */
+            /* transition-delay: 1s; */
+
+            /* shorthand for transition */
+            transition: all 3s ease-in 1s;
+
+        }
+        .translate{
+            transform: translateX(5vw) translateY(8vh) scale(2);
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+</html>

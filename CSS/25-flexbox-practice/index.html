@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo img{
+            width: 64px;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: 'Segoe UI';
+            background-color: gray;
+            border: 2px solid black;
+        }
+
+        .right ul{
+            display: flex;
+            gap: 30px;
+        }
+
+        .right ul li{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .right ul li img{
+            width: 20px;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-icon-marilyn-scott-0.png" alt="logo">
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Profile <img src="https://imgs.search.brave.com/Pi7-v7m7fXQh24Pvz50sEa_cS1dUggOtSN2LB6RQYnA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjkv/MTM2Lzg5MC9zbWFs/bC9jYXJldC1kb3du/LXN5bWJvbC1hcnJv/dy1wb2ludC1wb2lu/dGVyLXVuZGVyLXNv/dXRoLXVuZGVybmVh/dGgtYm90dG9tLWJs/YWNrLXdoaXRlLW91/dGxpbmUtc2hhcGUt/Y2xpcGFydC1ncmFw/aGljLWlsbHVzdHJh/dGlvbi1hcnR3b3Jr/LXNpZ24tc3ltYm9s/LXZlY3Rvci5qcGc" alt="products"></li>
+                    <li>Upload <img src="https://imgs.search.brave.com/Pi7-v7m7fXQh24Pvz50sEa_cS1dUggOtSN2LB6RQYnA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjkv/MTM2Lzg5MC9zbWFs/bC9jYXJldC1kb3du/LXN5bWJvbC1hcnJv/dy1wb2ludC1wb2lu/dGVyLXVuZGVyLXNv/dXRoLXVuZGVybmVh/dGgtYm90dG9tLWJs/YWNrLXdoaXRlLW91/dGxpbmUtc2hhcGUt/Y2xpcGFydC1ncmFw/aGljLWlsbHVzdHJh/dGlvbi1hcnR3b3Jr/LXNpZ24tc3ltYm9s/LXZlY3Rvci5qcGc" alt="products"></li>
+                    <li>Search <img src="https://imgs.search.brave.com/Pi7-v7m7fXQh24Pvz50sEa_cS1dUggOtSN2LB6RQYnA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjkv/MTM2Lzg5MC9zbWFs/bC9jYXJldC1kb3du/LXN5bWJvbC1hcnJv/dy1wb2ludC1wb2lu/dGVyLXVuZGVyLXNv/dXRoLXVuZGVybmVh/dGgtYm90dG9tLWJs/YWNrLXdoaXRlLW91/dGxpbmUtc2hhcGUt/Y2xpcGFydC1ncmFw/aGljLWlsbHVzdHJh/dGlvbi1hcnR3b3Jr/LXNpZ24tc3ltYm9s/LXZlY3Rvci5qcGc" alt="products"></li>
+                    <li>Settings <img src="https://imgs.search.brave.com/Pi7-v7m7fXQh24Pvz50sEa_cS1dUggOtSN2LB6RQYnA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjkv/MTM2Lzg5MC9zbWFs/bC9jYXJldC1kb3du/LXN5bWJvbC1hcnJv/dy1wb2ludC1wb2lu/dGVyLXVuZGVyLXNv/dXRoLXVuZGVybmVh/dGgtYm90dG9tLWJs/YWNrLXdoaXRlLW91/dGxpbmUtc2hhcGUt/Y2xpcGFydC1ncmFw/aGljLWlsbHVzdHJh/dGlvbi1hcnR3b3Jr/LXNpZ24tc3ltYm9s/LXZlY3Rvci5qcGc" alt="products"></li>
+                    <li><img src="https://imgs.search.brave.com/cOKDXpurx1mDrgZUz2t6RqUH5JtDyvv4zfFZ-emyuUM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzMxLzEvZ29vZ2xl/LXRyYW5zbGF0ZS1s/b2dvLXBuZ19zZWVr/bG9nby0zMTQxNzMu/cG5n" alt="about"></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
