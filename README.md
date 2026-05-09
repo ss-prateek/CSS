@@ -11,9 +11,7 @@ A structured collection of CSS practice files from my web development learning j
 | Project | Preview | Live Demo |
 | --- | --- | --- |
 | Spotify Download Page UI | ![Spotify Download Page](CSS/28-spotify-download/assets/screenshots/spotify-download-page.png) | [Open demo](https://ss-prateek.github.io/CSS/CSS/28-spotify-download/) |
-| CSS Animations Practice | ![CSS Animations](CSS/27-animations/assets/screenshots/animations.png) | [Open demo](https://ss-prateek.github.io/CSS/CSS/27-animations/) |
-| Flexbox Layout Practice | ![Flexbox Layout](CSS/21-flexbox/assets/screenshots/flexbox.png) | [Open demo](https://ss-prateek.github.io/CSS/CSS/21-flexbox/) |
-| CSS Grid Layout Practice | ![CSS Grid Layout](CSS/22-css-grid/assets/screenshots/css-grid.png) | [Open demo](https://ss-prateek.github.io/CSS/CSS/22-css-grid/) |
+| Bounce Animation Practice | `Preview image not added yet` | [Open demo](https://ss-prateek.github.io/CSS/CSS/31-bounce-animation/) |
 
 ## About Me
 
