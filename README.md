@@ -2,6 +2,19 @@
 
 A structured collection of CSS practice files from my web development learning journey. This repository tracks the concepts I am learning, the small experiments I build, and the improvements I make as a 2nd-year B.Tech student.
 
+## Live Demos
+
+[Open the CSS demo gallery](https://ss-prateek.github.io/CSS/)
+
+## Featured Mini Projects
+
+| Project | Preview | Live Demo |
+| --- | --- | --- |
+| Spotify Download Page UI | ![Spotify Download Page](CSS/28-spotify-download/assets/screenshots/spotify-download-page.png) | [Open demo](https://ss-prateek.github.io/CSS/CSS/28-spotify-download/) |
+| CSS Animations Practice | ![CSS Animations](CSS/27-animations/assets/screenshots/animations.png) | [Open demo](https://ss-prateek.github.io/CSS/CSS/27-animations/) |
+| Flexbox Layout Practice | ![Flexbox Layout](CSS/21-flexbox/assets/screenshots/flexbox.png) | [Open demo](https://ss-prateek.github.io/CSS/CSS/21-flexbox/) |
+| CSS Grid Layout Practice | ![CSS Grid Layout](CSS/22-css-grid/assets/screenshots/css-grid.png) | [Open demo](https://ss-prateek.github.io/CSS/CSS/22-css-grid/) |
+
 ## About Me
 
 I am Vidit Singh Sisodia, a B.Tech student at KIIT, currently building a strong foundation in front-end development. I am using this repository to practice CSS fundamentals, layout systems, responsive design, and real-world UI patterns.
@@ -39,14 +52,14 @@ I am Vidit Singh Sisodia, a B.Tech student at KIIT, currently building a strong 
 | `CSS/18-float-and-clear` | Float and clear |
 | `CSS/19-advanced-selectors` | Advanced selectors |
 | `CSS/20-layout-practice` | Layout practice |
-| `CSS/21-flexbox` | Flexbox |
-| `CSS/22-css-grid` | CSS Grid |
+| `CSS/21-flexbox` | Flexbox layout practice with wrapping, alignment, gaps, and item ordering |
+| `CSS/22-css-grid` | CSS Grid practice with responsive columns, alignment, and spacing |
 | `CSS/23-navigation-bar-layout` | Navigation bar layout |
 | `CSS/24-css-transforms` | CSS transforms |
 | `CSS/25-flexbox-practice` | Flexbox practice layout |
 | `CSS/26-Transition-Property` | CSS transition property |
-| `CSS/27-animations` | CSS animations |
-| `CSS/28-spotify-download` | Spotify download page UI project |
+| `CSS/27-animations` | Keyframe animation and transform practice |
+| `CSS/28-spotify-download` | Spotify-inspired download page UI project |
 
 ## Current Focus
 

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Learning Journal | Live Demos</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --panel: #111827;
+            --text: #f8fafc;
+            --muted: #cbd5e1;
+            --line: #334155;
+            --accent: #22c55e;
+            --accent-2: #38bdf8;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        header {
+            padding: 48px 24px 28px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .wrap {
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+
+        .eyebrow {
+            color: var(--accent);
+            font-weight: 700;
+            letter-spacing: 0;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(2rem, 5vw, 4.2rem);
+            line-height: 1;
+        }
+
+        .intro {
+            max-width: 760px;
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin: 18px 0 0;
+        }
+
+        main {
+            padding: 34px 24px 56px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: var(--panel);
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            display: block;
+            background: #020617;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .card-body {
+            padding: 18px;
+        }
+
+        h2 {
+            margin: 0 0 10px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.55;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 40px;
+            padding: 0 14px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            border: 1px solid var(--line);
+        }
+
+        .button.primary {
+            background: var(--accent);
+            color: #052e16;
+            border-color: var(--accent);
+        }
+
+        .button.secondary {
+            color: var(--accent-2);
+        }
+
+        footer {
+            padding: 0 24px 36px;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <div class="eyebrow">CSS Learning Journal</div>
+            <h1>Live front-end practice demos</h1>
+            <p class="intro">A growing collection of HTML and CSS exercises, layout experiments, and small UI projects built while learning front-end development.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrap">
+            <section class="grid" aria-label="Featured demos">
+                <article class="card">
+                    <img src="CSS/28-spotify-download/assets/screenshots/spotify-download-page.png" alt="Spotify download page UI screenshot">
+                    <div class="card-body">
+                        <h2>Spotify Download Page</h2>
+                        <p>A Spotify-inspired landing page with a navigation bar, hero section, and platform download cards.</p>
+                        <div class="links">
+                            <a class="button primary" href="CSS/28-spotify-download/">Live Demo</a>
+                            <a class="button secondary" href="CSS/28-spotify-download/README.md">README</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="CSS/27-animations/assets/screenshots/animations.png" alt="CSS animation demo screenshot">
+                    <div class="card-body">
+                        <h2>CSS Animations</h2>
+                        <p>A keyframes practice demo showing motion, color changes, transforms, timing, and fill modes.</p>
+                        <div class="links">
+                            <a class="button primary" href="CSS/27-animations/">Live Demo</a>
+                            <a class="button secondary" href="CSS/27-animations/README.md">README</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="CSS/21-flexbox/assets/screenshots/flexbox.png" alt="Flexbox layout practice screenshot">
+                    <div class="card-body">
+                        <h2>Flexbox Layout</h2>
+                        <p>A flex container practice page exploring alignment, wrapping, gaps, item ordering, and flex growth.</p>
+                        <div class="links">
+                            <a class="button primary" href="CSS/21-flexbox/">Live Demo</a>
+                            <a class="button secondary" href="CSS/21-flexbox/README.md">README</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="CSS/22-css-grid/assets/screenshots/css-grid.png" alt="CSS grid layout practice screenshot">
+                    <div class="card-body">
+                        <h2>CSS Grid Layout</h2>
+                        <p>A grid practice page using responsive columns, row and column gaps, item alignment, and self-positioning.</p>
+                        <div class="links">
+                            <a class="button primary" href="CSS/22-css-grid/">Live Demo</a>
+                            <a class="button secondary" href="CSS/22-css-grid/README.md">README</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrap">Built by Vidit Singh Sisodia while learning CSS and front-end development.</div>
+    </footer>
+</body>
+</html>
