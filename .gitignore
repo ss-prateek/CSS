@@ -4,3 +4,6 @@ HTML/
 # OS/editor noise
 .DS_Store
 Thumbs.db
+
+# Local installers should not be committed
+CSS/28-spotify-download/*.exe

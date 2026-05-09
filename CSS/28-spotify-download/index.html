@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Download</title>
+    <style>
+        /* styling of nav bar */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo img{
+            width: 64px;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            /* space-between: first item on the left, last item on the right, space in the middle */
+            align-items: center;
+            /* align-items: center; aligns flex items vertically in the center of the container. -> for the image arrow next to the text */
+            font-family: 'Segoe UI';
+            background-color: black;
+            border: 2px solid black;
+            padding: 10px 20px;
+        }
+
+        .right ul{
+            display: flex;
+            gap: 30px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .right ul li{
+            list-style: none;
+            /* display: flex; */
+            /* align-items: center; */
+            /* gap: 5px; */
+            /* These only matter if the <li> contains multiple items that need alignment. */
+            cursor: pointer;
+            color: #1DB954;
+        }
+
+        .right ul li img{
+            width: 20px;
+            cursor: pointer;
+        }
+
+        .right{
+            margin-left: auto;
+            /* is used to push the .right section to the far right inside a flex container. */
+        }
+        
+        /* styling for main content */
+
+        main{ 
+            background-color: #1DB954;
+        }
+        .image{
+            display: flex;
+            justify-content: center;
+            /* for centering the image horizontally */
+            align-items: center;
+                /* for centering the image vertically */
+        }
+        
+        .download-grid{
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* creates 3 equal-width columns */
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card{
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 20px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        .card button{
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            background-color: #1DB954;
+            color: white;
+            cursor: pointer;
+        }
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content button{
+            padding: 10px 20px;
+            /* 10px from top and bottom, 20px from left and right */
+            border: none;
+            border-radius: 30px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        .text{
+            padding: 20px;
+            font-size: 22px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .content button a,.card button a{
+            text-decoration: none;
+            color: white;
+            /* selecting all buttons and removing underline and blue color as a href is associated with them */
+        }
+
+        body{
+            background-color: #1DB954;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-icon-marilyn-scott-0.png" alt="logo">
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Profile <img src="https://imgs.search.brave.com/Pi7-v7m7fXQh24Pvz50sEa_cS1dUggOtSN2LB6RQYnA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjkv/MTM2Lzg5MC9zbWFs/bC9jYXJldC1kb3du/LXN5bWJvbC1hcnJv/dy1wb2ludC1wb2lu/dGVyLXVuZGVyLXNv/dXRoLXVuZGVybmVh/dGgtYm90dG9tLWJs/YWNrLXdoaXRlLW91/dGxpbmUtc2hhcGUt/Y2xpcGFydC1ncmFw/aGljLWlsbHVzdHJh/dGlvbi1hcnR3b3Jr/LXNpZ24tc3ltYm9s/LXZlY3Rvci5qcGc" alt="products"></li>
+                    <li>Upload <img src="https://imgs.search.brave.com/Pi7-v7m7fXQh24Pvz50sEa_cS1dUggOtSN2LB6RQYnA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjkv/MTM2Lzg5MC9zbWFs/bC9jYXJldC1kb3du/LXN5bWJvbC1hcnJv/dy1wb2ludC1wb2lu/dGVyLXVuZGVyLXNv/dXRoLXVuZGVybmVh/dGgtYm90dG9tLWJs/YWNrLXdoaXRlLW91/dGxpbmUtc2hhcGUt/Y2xpcGFydC1ncmFw/aGljLWlsbHVzdHJh/dGlvbi1hcnR3b3Jr/LXNpZ24tc3ltYm9s/LXZlY3Rvci5qcGc" alt="products"></li>
+                    <li>Search <img src="https://imgs.search.brave.com/Pi7-v7m7fXQh24Pvz50sEa_cS1dUggOtSN2LB6RQYnA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjkv/MTM2Lzg5MC9zbWFs/bC9jYXJldC1kb3du/LXN5bWJvbC1hcnJv/dy1wb2ludC1wb2lu/dGVyLXVuZGVyLXNv/dXRoLXVuZGVybmVh/dGgtYm90dG9tLWJs/YWNrLXdoaXRlLW91/dGxpbmUtc2hhcGUt/Y2xpcGFydC1ncmFw/aGljLWlsbHVzdHJh/dGlvbi1hcnR3b3Jr/LXNpZ24tc3ltYm9s/LXZlY3Rvci5qcGc" alt="products"></li>
+                    <li>Settings <img src="https://imgs.search.brave.com/Pi7-v7m7fXQh24Pvz50sEa_cS1dUggOtSN2LB6RQYnA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjkv/MTM2Lzg5MC9zbWFs/bC9jYXJldC1kb3du/LXN5bWJvbC1hcnJv/dy1wb2ludC1wb2lu/dGVyLXVuZGVyLXNv/dXRoLXVuZGVybmVh/dGgtYm90dG9tLWJs/YWNrLXdoaXRlLW91/dGxpbmUtc2hhcGUt/Y2xpcGFydC1ncmFw/aGljLWlsbHVzdHJh/dGlvbi1hcnR3b3Jr/LXNpZ24tc3ltYm9s/LXZlY3Rvci5qcGc" alt="products"></li>
+                    <li><img src="https://imgs.search.brave.com/cOKDXpurx1mDrgZUz2t6RqUH5JtDyvv4zfFZ-emyuUM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzMxLzEvZ29vZ2xl/LXRyYW5zbGF0ZS1s/b2dvLXBuZ19zZWVr/bG9nby0zMTQxNzMu/cG5n" alt="about"></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <h2>Download Spotify for free</h2>
+            <button><a href="https://www.spotify.com/download/">Get Spotify Free</a></button>
+        </div>
+        <div class="image">
+            <img width="500px" src="https://imgs.search.brave.com/1x_06-cRcRtXu1jwcJMSAWbx_9GaSRuCTzX-huqUASQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzE1Lzg5LzM2LzU1/LzM2MF9GXzE1ODkz/NjU1MTdfaUQ5OEdX/Z0hISlRYTWJQYTFu/ZE1MZ3FrbnlKY1hG/bk8uanBn" alt="Spotify app preview">
+        </div>
+        <div class="text">
+            "Listen to millions of songs on yourcomputer, mobile or tablet. Spotify is also available on PlayStation, TV and speakers. Listen absolutely free with adsor try Premium for 1 month free."
+        </div>
+        <div class="download-grid">
+            <div class="card">
+                <h2>Download Spotify for Android</h2>
+                <button>
+                    <a href="https://www.spotify.com/download/">Get Spotify</a>
+                </button>
+            </div>
+            <div class="card">
+                <h2>Download Spotify for iOS</h2>
+                <button>
+                    <a href="https://www.spotify.com/download/">Get Spotify</a>
+                </button>
+            </div>
+            <div class="card">
+                <h2>Download Spotify for Windows</h2>
+                <button>
+                    <a href="https://www.spotify.com/download/">Get Spotify</a>
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

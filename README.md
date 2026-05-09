@@ -46,6 +46,7 @@ I am Vidit Singh Sisodia, a B.Tech student at KIIT, currently building a strong 
 | `CSS/25-flexbox-practice` | Flexbox practice layout |
 | `CSS/26-Transition-Property` | CSS transition property |
 | `CSS/27-animations` | CSS animations |
+| `CSS/28-spotify-download` | Spotify download page UI project |
 
 ## Current Focus
 
