@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object fit & position</title>
+    <style>
+        .container{
+            height: 634px;
+            width: 688px;
+            border: 2px solid black;
+            background-image: url(https://imgs.search.brave.com/-Hq3ssUpH2TEIaH3kIhQqheidYeyQ4fCb4Eihp7Ek2Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTk2/MTEwNzI2L3Bob3Rv/L21vb24tc2hhZG93/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1jRVdJOHRhdWF0/REQtSmtscmdLajda/LXhyc19wNF9wTlJD/aEItUU1vUzAwPQ);
+            /* if image is small it by default repeats below and below */
+            /* background-position: right; */
+            /* background-repeat: repeat-x; */
+            /* it will make the image repeat in x direction */
+            background-repeat: no-repeat;
+            /* there will be no repeation */
+            background-position:center;
+            /* it will align the image to the centre of the conatiner */
+            background-clip:padding-box;
+            /* background-clip decides: Where should the background color/image stop */
+        }
+        img{
+            height: 434px;
+            width: 488px;
+            /* if we only add width and height, images aspect ratio will be altered */
+            /* object-fit: cover; */
+            /* object-position: left; */
+            /* by object-position we can choose which part of the image should be displayed if its cutting some part to fit */
+            /* it will cover the space said in img not in parent */
+            /* object-fit: contain; */
+            /* this will fit the image inside the assigned dimension with keeping the whole image so it may give some blank spaces */
+            /* object-fit: fill; */
+            /* it will fill the given dimension but image will be disoted */
+            /* object-fit: scale-down; */
+            /* image choti ho jayegi */
+            object-position: 10px 40px;
+            /* gives space entered from left and top, we can also use % */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://imgs.search.brave.com/nHjsfmZuAuJqniQrk2utewaNz-dfY1famrTzTCdT184/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTcv/MzQxLzY2Ny9zbWFs/bC9waG90b2dyYXBo/ZXItYWltcy1hLWNh/bWVyYS1sZW5zLWF0/LXRoZS12aWV3ZXIt/Y2FwdHVyaW5nLWEt/dml2aWQtbW9tZW50/LXdpdGgtYmx1cnJl/ZC1jb2xvcnMtYW5k/LWZvY3VzLW9uZ3Jh/cGhpYy1nZWFyLWZy/ZWUtcGhvdG8uanBn"> -->
+    </div>
+</body>
+</html>
