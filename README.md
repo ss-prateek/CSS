@@ -12,6 +12,7 @@ A structured collection of CSS practice files from my web development learning j
 | --- | --- | --- |
 | Spotify Download Page UI | ![Spotify Download Page](CSS/28-spotify-download/assets/screenshots/spotify-download-page.png) | [Open demo](https://ss-prateek.github.io/CSS/CSS/28-spotify-download/) |
 | Bounce Animation Practice | ![Bounce Animation Preview](CSS/31-bounce-animation/assets/screenshots/bounce-animation-preview.svg) | [Open demo](https://ss-prateek.github.io/CSS/CSS/31-bounce-animation/) |
+| Netflix Clone | ![Netflix Clone](CSS/32-netflix-clone/assets/screenshots/netflix-clone.png) | [Open demo](https://ss-prateek.github.io/CSS/CSS/32-netflix-clone/) |
 
 ## About Me
 
@@ -61,6 +62,7 @@ I am Vidit Singh Sisodia, a B.Tech student at KIIT, currently building a strong 
 | `CSS/29-object-fit&cover` | Object-fit and object-cover image behavior practice |
 | `CSS/30-filters` | CSS filter effects and visual styling practice |
 | `CSS/31-bounce-animation` | Bounce animation using CSS keyframes |
+| `CSS/32-netflix-clone` | Netflix-inspired responsive landing page project |
 
 ## Current Focus
 
