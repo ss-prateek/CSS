@@ -2,10 +2,6 @@
 
 A structured collection of CSS practice files from my web development learning journey. This repository tracks the concepts I am learning, the small experiments I build, and the improvements I make as a 2nd-year B.Tech student.
 
-## Live Demos
-
-[Open the CSS demo gallery](https://ss-prateek.github.io/CSS/)
-
 ## Featured Mini Projects
 
 | Project | Preview | Live Demo |
