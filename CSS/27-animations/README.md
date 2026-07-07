@@ -14,4 +14,4 @@ A CSS practice page focused on keyframe animation and transform behavior.
 
 ## Live Demo
 
-[Open the CSS Animations demo](https://ss-prateek.github.io/CSS/CSS/27-animations/)
+[Open the CSS Animations demo](https://ss-vidit.github.io/CSS/CSS/27-animations/)

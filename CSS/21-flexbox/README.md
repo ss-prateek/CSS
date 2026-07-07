@@ -14,4 +14,4 @@ A CSS practice page focused on Flexbox layout behavior.
 
 ## Live Demo
 
-[Open the Flexbox demo](https://ss-prateek.github.io/CSS/CSS/21-flexbox/)
+[Open the Flexbox demo](https://ss-vidit.github.io/CSS/CSS/21-flexbox/)

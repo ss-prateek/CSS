@@ -4,15 +4,15 @@ A structured collection of CSS practice files from my web development learning j
 
 ## Live Demos
 
-[Open the CSS demo gallery](https://ss-prateek.github.io/CSS/)
+[Open the CSS demo gallery](https://ss-vidit.github.io/CSS/)
 
 ## Featured Mini Projects
 
 | Project | Preview | Live Demo |
 | --- | --- | --- |
-| Spotify Download Page UI | ![Spotify Download Page](CSS/28-spotify-download/assets/screenshots/spotify-download-page.png) | [Open demo](https://ss-prateek.github.io/CSS/CSS/28-spotify-download/) |
-| Bounce Animation Practice | ![Bounce Animation Preview](CSS/31-bounce-animation/assets/screenshots/bounce-animation-preview.svg) | [Open demo](https://ss-prateek.github.io/CSS/CSS/31-bounce-animation/) |
-| Netflix Clone | ![Netflix Clone](CSS/32-netflix-clone/assets/screenshots/netflix-clone.png) | [Open demo](https://ss-prateek.github.io/CSS/CSS/32-netflix-clone/) |
+| Spotify Download Page UI | ![Spotify Download Page](CSS/28-spotify-download/assets/screenshots/spotify-download-page.png) | [Open demo](https://ss-vidit.github.io/CSS/CSS/28-spotify-download/) |
+| Bounce Animation Practice | ![Bounce Animation Preview](CSS/31-bounce-animation/assets/screenshots/bounce-animation-preview.svg) | [Open demo](https://ss-vidit.github.io/CSS/CSS/31-bounce-animation/) |
+| Netflix Clone | ![Netflix Clone](CSS/32-netflix-clone/assets/screenshots/netflix-clone.png) | [Open demo](https://ss-vidit.github.io/CSS/CSS/32-netflix-clone/) |
 
 ## About Me
 

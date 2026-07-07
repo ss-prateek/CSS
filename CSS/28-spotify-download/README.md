@@ -10,7 +10,7 @@ A static HTML and CSS practice project that recreates a Spotify-style download l
 
 ## Live Demo
 
-[Open the Spotify Download Page demo](https://ss-prateek.github.io/CSS/CSS/28-spotify-download/)
+[Open the Spotify Download Page demo](https://ss-vidit.github.io/CSS/CSS/28-spotify-download/)
 
 ## Features
 

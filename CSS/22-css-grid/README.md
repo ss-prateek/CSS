@@ -14,4 +14,4 @@ A CSS practice page focused on grid columns, spacing, and item placement.
 
 ## Live Demo
 
-[Open the CSS Grid demo](https://ss-prateek.github.io/CSS/CSS/22-css-grid/)
+[Open the CSS Grid demo](https://ss-vidit.github.io/CSS/CSS/22-css-grid/)

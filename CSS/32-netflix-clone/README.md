@@ -10,7 +10,7 @@ A static Netflix-inspired landing page built with HTML and internal CSS. The pro
 
 ## Live Demo
 
-[Open the Netflix Clone demo](https://ss-prateek.github.io/CSS/CSS/32-netflix-clone/)
+[Open the Netflix Clone demo](https://ss-vidit.github.io/CSS/CSS/32-netflix-clone/)
 
 ## Features
 
